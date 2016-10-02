@@ -1,66 +1,88 @@
-*, *:after, *:before {
+*, *:after, *:before{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-
-body {
+body{
   width: 100%;
   min-height: 100%;
 }
 
-.nav {
+.nav{
   outline: 1px dotted blue;
   text-align: center;
   width: 960px;
   height:100px;
 }
 
-ul li {
-  list-style-type: none;
+.logo{
+  width: 226px;
+  height: 120px;
+  margin-top: 0px;
+  padding-left:30px;
+  padding-top: 50px;
   display: inline;
 }
 
-#pagewrap {
+
+ul{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+}
+
+
+ li{
+  list-style-type: none;
+  display: inline;
+  font-size: 20px;
+  margin-right: 45px;
+}
+
+#pagewrap{
   width: 1024px;
   margin: 0 auto;
 }
-.header {
- /*outline: 1px solid red;*/
- height: 210px;
- margin-bottom: 30px;
+
+.header{
+  /*outline: 1px solid red;*/
+  height: 210px;
+  margin-bottom: 30px;
+  background: grey;
 }
 
-.main {
+.main{
   max-width: 1024px;
   margin: 0, auto;
   /*outline: 1px solid black;*/
   /*height: 960px*/
 }
 
-.top {
+.top{
   outline: 1px soild green;
   height: 960px;
   width: 450px;
    margin-bottom: 30px;
 }
-#bigpic {
+#bigpic{
   text-align: center;
-   margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.holderofthreeimages {
+.holderofthreeimages{
   /*outline: 1px dotted orange;*/
   height: 375px;
-   margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-span {
+span{
   margin-left: 30px;
 }
 
-.holderoftwoimages {
+.holderoftwoimages{
   /*outline: 1px solid purple;*/
   width: 970px;
   height: 400px;
@@ -70,22 +92,28 @@ span {
 
 
 #right{
-height: 350px;
+  height: 350px;
 }
 
-.submit {
-float: left;
-margin-left: 27px;
-height: 82px;
-width: 210px;
-
+.submit:hover{
+  background: teal;
 }
 
-h1 {
-display: block;
+.submit{
+  background-color: grey;
+  float: left;
+  margin-left: 27px;
+  height: 82px;
+  width: 210px;
+  transition: background-color 350ms ease;
 }
 
-textarea {
+h1{
+  display: block;
+}
+
+
+textarea{
   outline: 1px solid orange;
   float: right;
   height: 250px;
@@ -94,10 +122,12 @@ textarea {
   overflow: auto;
   display: block;
 }
-.footer {
-  height: 100%;
-  margin-left: 241px;
-  margin-top: 30px;
-  margin-left: 23px;
 
+.footer{
+  /*outline: 1px solid red;*/
+  height: 150px;
+  margin-top: 30px;
+  width: 1024px;
+  background: grey;
+  margin: 0 auto;
 }
